@@ -4,6 +4,9 @@
 
 wp-config.php
 wp-content/uploads
+work/
+grunt
+node_modules
 
 #################
 ## Eclipse
