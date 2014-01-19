@@ -7,6 +7,7 @@ wp-content/uploads
 work/
 grunt
 node_modules
+.htaccess
 
 #################
 ## Eclipse

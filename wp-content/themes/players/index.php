@@ -1,21 +1,27 @@
 <?php get_template_part('templates/page', 'header'); ?>
-
+<?php get_template_part('templates/home', 'banner'); ?>
+<?php query_posts('posts_per_page=1'); ?>
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'roots'); ?>
   </div>
-  <?php get_search_form(); ?>
 <?php endif; ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', get_post_format()); ?>
+  <div class="row">
+    <div class="col-xs-8 feature news">
+      <a class="cta2" href="news">
+        <span class="title">News</span>
+        <span class="follow">&gt;</span>
+      </a>
+      <?php get_template_part('templates/content', get_post_format()); ?>
+    </div>
+    <div class="col-xs-4 feature twitter">
+     <a class="cta2" href="http://twitter.com/LeckyPlayers">
+        <span class="title">Twitter</span>
+        <span class="follow">&gt;</span>
+      </a>
+     <?php dynamic_sidebar('sidebar-primary'); ?>
+    </div>
+  </div>
 <?php endwhile; ?>
-
-<?php if ($wp_query->max_num_pages > 1) : ?>
-  <nav class="post-nav">
-    <ul class="pager">
-      <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
-      <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
-    </ul>
-  </nav>
-<?php endif; ?>

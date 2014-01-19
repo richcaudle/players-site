@@ -9,6 +9,7 @@ function roots_title() {
     } else {
       return __('Latest Posts', 'roots');
     }
+    return;
   } elseif (is_archive()) {
     $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
     if ($term) {

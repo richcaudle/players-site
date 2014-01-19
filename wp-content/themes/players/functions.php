@@ -17,3 +17,19 @@ require_once locate_template('/lib/relative-urls.php');   // Root relative URLs
 require_once locate_template('/lib/widgets.php');         // Sidebars and widgets
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
+
+
+
+
+
+function custom_excerpt_length( $length ) {
+	return 100;
+}
+
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function create_archive_rewrite() {
+	add_rewrite_rule('^rich', 'news.php?post_type=cars&a_type=$matches[1]', 'top');
+}
+
+add_action('init', 'create_archive_rewrite');
