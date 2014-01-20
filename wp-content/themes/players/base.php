@@ -16,8 +16,12 @@
       get_template_part('templates/header');
     }
   ?>
-
   <div class="wrap container" role="document">
+
+  <?php if (roots_display_sidebar()) : ?>
+    <hr/>
+  <?php endif; ?>
+
     <div class="content row">
       <main class="main <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>

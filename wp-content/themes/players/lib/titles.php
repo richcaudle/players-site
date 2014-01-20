@@ -17,11 +17,11 @@ function roots_title() {
     } elseif (is_post_type_archive()) {
       return apply_filters('the_title', get_queried_object()->labels->name);
     } elseif (is_day()) {
-      return sprintf(__('Daily Archives: %s', 'roots'), get_the_date());
+      return sprintf(__('News: %s', 'roots'), get_the_date());
     } elseif (is_month()) {
-      return sprintf(__('Monthly Archives: %s', 'roots'), get_the_date('F Y'));
+      return sprintf(__('News: %s', 'roots'), get_the_date('F Y'));
     } elseif (is_year()) {
-      return sprintf(__('Yearly Archives: %s', 'roots'), get_the_date('Y'));
+      return sprintf(__('News: %s', 'roots'), get_the_date('Y'));
     } elseif (is_author()) {
       $author = get_queried_object();
       return sprintf(__('Author Archives: %s', 'roots'), $author->display_name);

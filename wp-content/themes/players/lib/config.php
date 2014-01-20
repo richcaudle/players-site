@@ -36,6 +36,13 @@ function roots_sidebar_class() {
   return 'col-sm-4';
 }
 
+function is_news_page() {
+  if (strpos(get_page_template(), 'news.php') !== false)
+    return true;
+  else
+    return false;
+}
+
 /**
  * Define which pages shouldn't have the sidebar
  *
@@ -63,11 +70,12 @@ function roots_display_sidebar() {
      * Any of these page templates that return true won't show the sidebar
      */
     array(
-      'template-custom.php'
+      'templates/news.php'
     )
   );
 
   return apply_filters('roots_display_sidebar', $sidebar_config->display);
+
 }
 
 /**

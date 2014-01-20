@@ -28,8 +28,9 @@ function custom_excerpt_length( $length ) {
 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-function create_archive_rewrite() {
-	add_rewrite_rule('^rich', 'news.php?post_type=cars&a_type=$matches[1]', 'top');
+function news_archive_rewrite(){
+    global $wp_rewrite;
+    $wp_rewrite->date_structure = 'news?year=%year%&month=%monthnum%';
 }
 
-add_action('init', 'create_archive_rewrite');
+add_action( 'init', 'news_archive_rewrite' );

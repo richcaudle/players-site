@@ -3,7 +3,18 @@
 Template Name: News
 */
  ?>
- <?php query_posts( 'posts_per_page=5' ); ?>
+ <?php 
+
+  if (isset($_GET['year']) && isset($_GET['year']))
+  {
+    query_posts('year=' . $_GET["year"] . '&monthnum=' . $_GET["month"] ); 
+  }
+  else
+  {
+    query_posts('posts_per_page=5'); 
+  }
+
+ ?>
 <?php get_template_part('templates/page', 'header'); ?>
 
 <hr/>
@@ -17,6 +28,8 @@ Template Name: News
     <?php include roots_sidebar_path(); ?>
   </div>
 </div>
+
+<style> aside.sidebar { display: none } </style>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
