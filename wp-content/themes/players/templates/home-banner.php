@@ -1,6 +1,6 @@
 <div class="container home">
   <div class="row">
-    <div class="col-xs-12 carousel" style="background-image:url(images/uponatime-banner.jpg)">
+    <div class="col-xs-12 carousel">
       <a href="next-production" style='width:100%'>
         <img src="images/uponatime-banner.jpg" />
       </a>

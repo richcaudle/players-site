@@ -15,16 +15,15 @@ Template Name: News
   }
 
  ?>
-<?php get_template_part('templates/page', 'header'); ?>
-
 <hr/>
+<?php get_template_part('templates/page', 'header'); ?>
 <div class="row">
-  <div class="col-xs-8">
+  <div class="col-sm-8">
     <?php while (have_posts()) : the_post(); ?>
       <?php get_template_part('templates/content', get_post_format()); ?>
     <?php endwhile; ?>
   </div>
-  <div class="col-xs-4">
+  <div class="col-sm-4">
     <?php include roots_sidebar_path(); ?>
   </div>
 </div>
