@@ -16,7 +16,6 @@ function wpt_get_user( $twitter_ID=false ) {
 	return json_decode($result);
 }
 
-
 add_shortcode( 'get_tweets', 'wpt_get_twitter_feed' );
 function wpt_get_twitter_feed( $atts, $content ) {
 	extract( shortcode_atts( array( 
@@ -86,9 +85,9 @@ function wpt_twitter_feed( $instance ) {
 		}
 		if ( $instance['source'] ) {
 			$source = $tweet['source'];
-			$timetweet = sprintf( __( '<a href="%3$s">%1$s ago</a> via %2$s', 'wp-to-twitter' ), human_time_diff( strtotime( $tweet['created_at'] ) ), $source, "http://twitter.com/$instance[twitter_id]/status/$tweet[id_str]" );
+			$timetweet = sprintf( __( '<a href="%3$s">about %1$s ago</a> via %2$s', 'wp-to-twitter' ), human_time_diff( strtotime( $tweet['created_at'] ) ), $source, "http://twitter.com/$instance[twitter_id]/status/$tweet[id_str]" );
 		} else {
-			$timetweet = sprintf( __( '<a href="%2$s">%1$s ago</a>', 'wp-to-twitter' ), human_time_diff( strtotime( $tweet['created_at'] ) ), "http://twitter.com/$instance[twitter_id]/status/$tweet[id_str]" );
+			$timetweet = sprintf( __( '<a href="%2$s">about %1$s ago</a>', 'wp-to-twitter' ), human_time_diff( strtotime( $tweet['created_at'] ) ), "http://twitter.com/$instance[twitter_id]/status/$tweet[id_str]" );
 		}
 		$tweet_classes = wpt_generate_classes( $tweet );
 		
@@ -160,7 +159,6 @@ function __construct() {
 function widget( $args, $instance ) {
 	extract( $args );
 	wp_enqueue_script( 'twitter-platform', "https://platform.twitter.com/widgets.js" );
-	wp_enqueue_style( 'wpt-twitter-feed' );
 	/** Merge with defaults */
 	$instance = wp_parse_args( (array) $instance, $this->defaults );
 	echo $before_widget;

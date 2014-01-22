@@ -34,3 +34,5 @@ function news_archive_rewrite(){
 }
 
 add_action( 'init', 'news_archive_rewrite' );
+
+
