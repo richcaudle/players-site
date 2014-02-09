@@ -298,6 +298,14 @@ footer .col-lg-12
 	{
 		height: 110px;
 	}
+
+	.title {
+		padding: 4px;
+		margin: 0;
+		text-indent: 6px;
+		line-height: 1.4em;
+		font-size: 1.2em;
+	}
 }
 
 @media (min-width: 1024px)
