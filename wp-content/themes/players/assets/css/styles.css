@@ -21,6 +21,11 @@ header .container {
 	top: 15px;
 }
 
+.post img {
+width: 100%; /* Added by Rob to fix Image Width Issues*/
+height: 100%;
+}
+
 .navbar-toggle
 {
 	position: absolute;
