@@ -178,6 +178,11 @@ div.news .title
 	background: #ffb347;
 }
 
+div.facebook .title
+{
+	background: #3B5998;
+}
+
 div.news, div.twitter
 {
 	background: #f9f9f9;
@@ -214,6 +219,12 @@ div.news, div.twitter
 }
 
 div.news article
+{
+	padding: 0 20px;
+	padding-right: 5px;
+}
+
+div.facebook article
 {
 	padding: 0 20px;
 }
@@ -280,7 +291,7 @@ footer .col-lg-12
 	}
 
 	.feature.news { 
-		padding-right: 0;
+		padding-right: 5px;
 	}
 
 	.feature.twitter { 
