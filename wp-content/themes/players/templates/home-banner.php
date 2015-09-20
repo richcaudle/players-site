@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xs-12 carousel">
       <a href="next-production" style='width:100%'>
-        <img src="images/placeholder-banner.jpg" />
+        <img src="images/athome-banner.jpg" />
       </a>
     </div>
   </div>
