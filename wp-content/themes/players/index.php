@@ -35,18 +35,12 @@
      // <?php dynamic_sidebar('sidebar-primary'); ?>
     </div> -->
       
-<div class="col-md-4 feature facebook">
+<div class="col-sm-4 feature facebook">
     <a class="cta2" href="http://www.facebook.com/leckhamptonplayers">
         <span class="title">Facebook</span>
         <span class="follow">&gt;</span>
     </a>
-    <header>
-        <h3 class="entry-title"></h3>
-    </header>
-    <div align="center">
-        <div class="fb-like-box" data-href="https://www.facebook.com/leckhamptonplayers" data-width="100%" data-height="410" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true">
-        </div>
-  </div>
+    <?php get_template_part('templates/facebook-like-box'); ?>
 </div>
 </div>
 
