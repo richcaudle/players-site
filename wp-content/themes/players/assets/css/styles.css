@@ -349,3 +349,14 @@ footer .col-lg-12
     max-width: 100% !important;
     height: auto !important;
 }
+
+
+/*FIX TEXT-PADDING ISSUE ON STATIC PAGES */
+.staticpage p:first-child {
+    padding: 0px;
+}
+
+.staticpage p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
