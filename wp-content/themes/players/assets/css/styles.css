@@ -343,3 +343,9 @@ footer .col-lg-12
 	}
 
 }
+
+/* CSS TO FIX PAGE IMAGES & MAKE THEM RESPONSIVE -RT */
+.staticpage img {
+    max-width: 100% !important;
+    height: auto !important;
+}
