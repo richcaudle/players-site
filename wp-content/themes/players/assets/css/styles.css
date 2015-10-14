@@ -351,12 +351,15 @@ footer .col-lg-12
 }
 
 
-/*FIX TEXT-PADDING ISSUE ON STATIC PAGES */
-.staticpage p:first-child {
-    padding: 0px;
-}
+/*FIX TEXT-PADDING ISSUE ON STATIC PAGES ON MOBILE */
 
-.staticpage p {
-    padding-left: 15px;
-    padding-right: 15px;
+@media(max-width: 1050px) {
+    .staticpage p:first-child {
+        padding: 0px;
+    }
+
+    .staticpage p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
