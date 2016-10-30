@@ -23,11 +23,13 @@
         <span class="title">Next production</span>
         <span class="follow">&gt;</span>
       </a>
-      <p>Mirror mirror on the wall, which is the fairest panto of all?</p>
-      <p>Well it's sure to be the Leckhampton Player's production of Snow White and the Seven Dwarfs with spectacular cast, music, sets and costumes.</p>
-      <p>Join Chuckles, Edna & friends at Leckhampton Village Hall as they try to overcome the wicked Queen Avarice and save Snow White.</p>
-      <p>This year's pantomime runs from <strong>Saturday 28th January to Saturday 4th February 2017</strong>.</p>
-      <p>Ticket information coming soon!</p>
+      <div style="padding: 10px;">
+        <p>Mirror mirror on the wall, which is the fairest panto of all?</p>
+        <p>Well it's sure to be the Leckhampton Player's production of Snow White and the Seven Dwarfs with spectacular cast, music, sets and costumes.</p>
+        <p>Join Chuckles, Edna & friends at Leckhampton Village Hall as they try to overcome the wicked Queen Avarice and save Snow White.</p>
+        <p>This year's pantomime runs from <strong>Saturday 28th January to Saturday 4th February 2017</strong>.</p>
+        <p>Ticket information coming soon!</p>
+      </div>
     </div>
     <!-- <div class="col-sm-4 feature twitter">
      <a class="cta2" href="http://twitter.com/LeckyPlayers">
