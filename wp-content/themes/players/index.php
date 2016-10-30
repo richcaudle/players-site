@@ -17,14 +17,10 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<?php while (have_posts()) : the_post(); ?>
   <div class="row">
-    <div class="col-sm-8 feature news">
-      <a class="cta2" href="news">
-        <span class="title">News</span>
+    <div class="col-sm-6 feature news">
+        <span class="title">Next production</span>
         <span class="follow">&gt;</span>
-      </a>
-      <?php get_template_part('templates/content', get_post_format()); ?>
     </div>
     <!-- <div class="col-sm-4 feature twitter">
      <a class="cta2" href="http://twitter.com/LeckyPlayers">
@@ -34,7 +30,7 @@
      // <?php dynamic_sidebar('sidebar-primary'); ?>
     </div> -->
       
-<div class="col-sm-4 feature facebook">
+<div class="col-sm-6 feature facebook">
     <a class="cta2" href="http://www.facebook.com/leckhamptonplayers">
         <span class="title">Facebook</span>
         <span class="follow">&gt;</span>
@@ -42,5 +38,3 @@
     <?php get_template_part('templates/facebook-like-box'); ?>
 </div>
 </div>
-
-<?php endwhile; ?>
