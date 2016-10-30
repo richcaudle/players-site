@@ -132,30 +132,33 @@
         </div>
       </div>
       <?php else:
-        $email_to = "rob@robtribe.co.uk";
-        $email_subject = "New Snow White Booking from ".$_POST['name'];
-        // To send HTML mail, the Content-type header must be set
-        $headers  = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-        // Additional headers
-        //$headers .= 'To: Mary <mary@example.com>, Kelly <kelly@example.com>' . "\r\n";
-        $headers .= 'From: LP TICKETS <do-not-reply@leckhamptonplayers.com>' . "\r\n";
-        $headers .= 'Reply-to: '.$_POST['email'].'' . "\r\n";
-        $headers .= 'Cc: test@robtribe.co.uk' . "\r\n";
-        //$headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
+        require 'PHPMailer/PHPMailerAutoload.php';
+        //Create a new PHPMailer instance
+        $mail = new PHPMailer;
+        //Set who the message is to be sent from
+        $mail->setFrom('do-not-reply@leckhamptonplayers.com', 'LP TICKETS');
+        //Set an alternative reply-to address
+        $mail->addReplyTo($_POST['email'], $_POST['name']);
+        //Set who the message is to be sent to
+        $mail->addAddress('rob@robtribe.co.uk');
+        //Set the subject line
+        $mail->Subject = "New Snow White Booking from ".$_POST['name'];
 
-        $message = "A new online booking for Snow White as been received from the Leckhampton Players website:<br/><br/>
+        $mail->Body = "A new online booking for Snow White as been received from the Leckhampton Players website:
 
-Name: ".$_POST['name']."<br/>
-Email: ".$_POST['email']."<br/>
-Phone: ".$_POST['phone']."<br/>
-Performance: ".$_POST['performance']."<br/>
-Adult tickets: ".$_POST['adult']."<br/>
-Child tickets: ".$_POST['child']."<br/><br/>
+Name: ".$_POST['name']."
+Email: ".$_POST['email']."
+Phone: ".$_POST['phone']."
+Performance: ".$_POST['performance']."
+Adult tickets: ".$_POST['adult']."
+Child tickets: ".$_POST['child']."
+
 You can email ".$_POST['name']." by replying to this email.";
 
-        mail($email_to, $email_subject, $message, $headers);
+        if(!$mail->send()) {
+        } else {
+        }
       ?>
 
         <div class="row">
