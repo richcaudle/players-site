@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xs-12 carousel">
       <a href="next-production" style='width:100%'>
-        <img src="images/murder-on-cue-banner-2.jpg" />
+        <img src="images/placeholder-banner.jpg" />
       </a>
     </div>
   </div>
