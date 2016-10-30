@@ -143,8 +143,6 @@
         $headers .= 'From: LP TICKETS <do-not-reply@leckhamptonplayers.com>' . "\r\n";
         $headers .= 'Reply-to: '.$_POST['email'].'' . "\r\n";
         $headers .= 'Cc: test@robtribe.co.uk' . "\r\n";
-        $headers .= 'Cc: test1@robtribe.co.uk' . "\r\n";
-        $headers .= 'Cc: test2@robtribe.co.uk' . "\r\n";
         //$headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
 
         $message = "A new online booking for Snow White as been received from the Leckhampton Players website:<br/><br/>
