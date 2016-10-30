@@ -19,8 +19,10 @@
 
   <div class="row">
     <div class="col-sm-6 feature news">
+      <a class="cta2" href="http://www.facebook.com/leckhamptonplayers">
         <span class="title">Next production</span>
         <span class="follow">&gt;</span>
+      </a>
     </div>
     <!-- <div class="col-sm-4 feature twitter">
      <a class="cta2" href="http://twitter.com/LeckyPlayers">
