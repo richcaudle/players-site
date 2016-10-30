@@ -19,7 +19,7 @@
 
   <div class="row">
     <div class="col-sm-6 feature news">
-      <a class="cta2" href="http://www.leckhamptonplayers.co.uk">
+      <a class="cta2" href="http://www.leckhamptonplayers.com">
         <span class="title">Next production</span>
         <span class="follow">&gt;</span>
       </a>
