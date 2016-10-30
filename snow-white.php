@@ -72,7 +72,7 @@
             </select>
             </div>
             <div class="form-group row">
-            <label for="adult" style="font-weight:500;" class="col-xs-9 col-form-label">Adult tickets @ £8.00:</label>
+            <label for="adult" style="font-weight:500;" class="col-xs-9 col-form-label">Adult tickets @ &pound;8.00:</label>
               <div class="col-xs-3">
                 <select class="form-control" id="adult" name="adult" required>
                   <option>0</option>
@@ -90,7 +90,7 @@
               </div>
             </div>
             <div class="form-group row">
-            <label for="child" style="font-weight:500;" class="col-xs-9 col-form-label">Child tickets @ £4.00:</label>
+            <label for="child" style="font-weight:500;" class="col-xs-9 col-form-label">Child tickets @ &pound;4.00:</label>
               <div class="col-xs-3">
                 <select class="form-control" id="child" name="child" required>
                   <option>0</option>
@@ -164,7 +164,7 @@ You can email ".$_POST['name']." by replying to this email.";
           <div class="col-sm-6 offset-sm-3" style="text-align: center; font-size: 1rem;">
             <p class="lead" style="font-size: 1.5rem;">Thanks for booking your tickets!</p>
             <p>We'll contact you by phone within 2 working days to confirm your booking.</p>
-            <p>You can pay for your tickets by cash, card or cheque - please be aware that there is an additional £1.50 booking fee for payments by card.</p>
+            <p>You can pay for your tickets by cash, card or cheque - please be aware that there is an additional &pound;1.50 booking fee for payments by card.</p>
             <p>If you want to confirm your booking now by telephone, you can call us on 07867 884 985 (lines open 10am - 9pm daily).</p>
             <a class="btn btn-danger" style="padding: 10px 30px; border: 2px solid white; margin-bottom: 50px;" href="snow-white.php"><i class="fa fa-arrow-left"></i> &nbsp;Make another booking</a>
           </div>
