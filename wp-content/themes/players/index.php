@@ -24,11 +24,12 @@
         <span class="follow">&gt;</span>
       </a>
       <div style="padding: 10px;">
-        <p>Mirror mirror on the wall, which is the fairest panto of all?</p>
-        <p>Well it's sure to be the Leckhampton Player's production of Snow White and the Seven Dwarfs with spectacular cast, music, sets and costumes.</p>
-        <p>Join Chuckles, Edna & friends at Leckhampton Village Hall as they try to overcome the wicked Queen Avarice and save Snow White.</p>
-        <p>This year's pantomime runs from <strong>Saturday 28th January to Saturday 4th February 2017</strong>.</p>
-        <p>Ticket information coming soon!</p>
+        <p>Our next production is our annual pantomime of Snow White and the Seven Dwarfs.</p>
+        <p><strong>The show runs from Saturday 28<sup>th</sup> January until Saturday 4<sup>th</sup> February 2017, and tickets are only £8 for adults and £5 for children!</strong></p>
+        <p>Join Chuckles, Edna &amp; friends at Leckhampton Village Hall as they try to overcome the wicked Queen Avarice and save Snow White.</p>
+        <p>You can book your tickets online using the link below, email <a href="mailto:tickets@leckhamptonplayers.com">tickets@leckhamptonplayers.com</a>, or call the box office on 07867 884 985 (lines open 10am - 9pm daily).</p>
+        <br>
+        <p><a href="http://www.tribehost.co.uk/snow-white.php"><strong>Book online now -&gt;</strong></a></p>
       </div>
     </div>
     <!-- <div class="col-sm-4 feature twitter">
