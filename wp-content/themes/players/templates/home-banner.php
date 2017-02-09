@@ -1,9 +1,7 @@
 <div class="container home">
   <div class="row">
     <div class="col-xs-12 carousel">
-      <a href="http://www.tribehost.co.uk/snow-white.php" style='width:100%'>
-        <img src="images/snow-white-banner.jpg" />
-      </a>
+        <img src="images/placeholder-banner.jpg" />
     </div>
   </div>
   <div class="row">
