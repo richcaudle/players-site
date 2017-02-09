@@ -24,12 +24,8 @@
         <span class="follow">&gt;</span>
       </a>
       <div style="padding: 10px;">
-        <p>Our next production is our annual pantomime of Snow White and the Seven Dwarfs.</p>
-        <p><strong>The show runs from Saturday 28<sup>th</sup> January until Saturday 4<sup>th</sup> February 2017, and tickets are only £8 for adults and £5 for children!</strong></p>
-        <p>Join Chuckles, Edna &amp; friends at Leckhampton Village Hall as they try to overcome the wicked Queen Avarice and save Snow White.</p>
-        <p>You can book your tickets online using the link below, email <a href="mailto:tickets@leckhamptonplayers.com">tickets@leckhamptonplayers.com</a>, or call the box office on 07867 884 985 (lines open 10am - 9pm daily).</p>
-        <br>
-        <p><a href="http://www.tribehost.co.uk/snow-white.php"><strong>Book online now -&gt;</strong></a></p>
+        <p>Our next production will be our annual musical in spring/summer 2017.</p>
+        <p>Check back soon for more information about the show.</p>
       </div>
     </div>
     <!-- <div class="col-sm-4 feature twitter">
