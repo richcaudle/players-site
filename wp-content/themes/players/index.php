@@ -24,8 +24,8 @@
         <span class="follow">&gt;</span>
       </a>
       <div style="padding: 10px;">
-        <p>Our next production will be our annual musical in spring/summer 2017.</p>
-        <p>Check back soon for more information about the show.</p>
+        <p>Our next production will be 'Old Time Music Hall' and runs from 30th May - 3rd June 2017.</p>
+        <p>Tickets will be on sale soon!</p>
       </div>
     </div>
     <!-- <div class="col-sm-4 feature twitter">
