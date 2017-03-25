@@ -1,7 +1,7 @@
 <div class="container home">
   <div class="row">
     <div class="col-xs-12 carousel">
-        <img src="images/placeholder-banner.jpg" />
+        <img src="images/musichall-banner.jpg" />
     </div>
   </div>
   <div class="row">
