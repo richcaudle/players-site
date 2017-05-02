@@ -1,7 +1,9 @@
 <div class="container home">
   <div class="row">
     <div class="col-xs-12 carousel">
-        <img src="images/musichall-banner.jpg" />
+      <a href="http://www.tribehost.co.uk/tickets.php">
+        <img src="images/music-hall-banner-on-sale.jpg" />
+      </a>
     </div>
   </div>
   <div class="row">
