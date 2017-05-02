@@ -24,7 +24,7 @@
         <span class="follow">&gt;</span>
       </a>
       <div style="padding: 10px;">
-        <p>Our next production will be 'Old Time Music Hall' and runs from 30th May - 3rd June 2017.</p>
+        <p>Book your tickets now for 'Old Time Music Hall' - our next production which promises to be an evening packed with music, melodrama and laughter, and runs from 30th May - 3rd June 2017.</p>
         <p>Tickets are now on sale and cost just £10 (including ploughmans supper), a licenced bar is also available.</p>
         <p>Call the box office now on 07867 884 985 (lines open 10am - 9pm daily) or <a href="http://www.tribehost.co.uk/tickets.php">book your tickets online</a> before it's too late!</p>
         <p><strong><a href="http://www.tribehost.co.uk/tickets.php">Book Tickets &rarr;</a></strong></p>
