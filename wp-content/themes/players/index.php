@@ -24,8 +24,10 @@
         <span class="follow">&gt;</span>
       </a>
       <div style="padding: 10px;">
-        <p>Our next product is the autumn play and will run from 4th - 7th October 2017.</p>
-        <p>Check back soon for more information, and how you can book your tickets.</p>
+        <p>For our next production we will be producing two one act plays running from Thursday 5th – Saturday 7th October 2017.</p>
+        <p>'Growing old Gracefully' will open the evening, followed by 'Strictly Sex Factor (on Ice)'.</p>
+        <p>It’s guaranteed to be an evening full of laughs, so book your tickets now to avoid disappointment – the show is only running for three nights, so be quick!</p>
+        <p>Tickets are just £8.00 and you can order them online, or by calling the box office on 07867 884 985 (lines open 10am – 9pm).</p>
       </div>
     </div>
     <!-- <div class="col-sm-4 feature twitter">
