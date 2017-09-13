@@ -1,9 +1,9 @@
 <div class="container home">
   <div class="row">
     <div class="col-xs-12 carousel">
-      <!--<a href="http://www.tribehost.co.uk/tickets.php">-->
+      <a href="http://www.tribehost.co.uk/tickets.php">
         <img src="images/strictly-sex-factor-banner.jpg" />
-      <!--</a>-->
+      </a>
     </div>
   </div>
   <div class="row">
