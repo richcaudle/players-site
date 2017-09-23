@@ -1,9 +1,12 @@
 <div class="container home">
   <div class="row">
     <div class="col-xs-12 carousel">
-      <a href="http://www.tribehost.co.uk/tickets.php">
-        <img src="images/strictly-sex-factor-banner.jpg" />
-      </a>
+      <!-- Next production text is provided by widget -->
+        <?php if ( is_active_sidebar( 'home-banner' ) ) : ?>
+		      <?php dynamic_sidebar( 'home-banner' ); ?>
+          <?php else: ?>
+        <img src="images/placeholder-banner.jpg" />
+      <?php endif; ?>
     </div>
   </div>
   <div class="row">
