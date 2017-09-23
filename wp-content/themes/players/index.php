@@ -24,10 +24,7 @@
         <span class="follow">&gt;</span>
       </a>
       <div style="padding: 10px;">
-        <!--<p>For our next production we will be producing two one act plays running from Thursday 5th – Saturday 7th October 2017.</p>
-        <p>'Growing old Gracefully' will open the evening, followed by 'Strictly Sex Factor (on Ice)'.</p>
-        <p>It’s guaranteed to be an evening full of laughs, so <a href="http://www.tribehost.co.uk/tickets.php">book your tickets</a> now to avoid disappointment – the show is only running for three nights, so be quick!</p>
-        <p>Tickets are just £8.00 and you can <a href="http://www.tribehost.co.uk/tickets.php">order them online</a>, or by calling the box office on 07867 884 985 (lines open 10am – 9pm).</p>-->
+	<!-- Next production text is provided by widget -->
         <?php if ( is_active_sidebar( 'next-production' ) ) : ?>
 		      <?php dynamic_sidebar( 'next-production' ); ?>
         <?php endif; ?>
