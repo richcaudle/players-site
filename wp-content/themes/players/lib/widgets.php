@@ -24,12 +24,16 @@ function roots_widgets_init() {
   
   register_sidebar(array(
     'name'          => __('Next production', 'roots'),
-    'id'            => 'next-production'
+    'id'            => 'next-production',
+    'before_widget' => '',
+    'after_widget' => ''
   ));
   
   register_sidebar(array(
     'name'          => 'Home banner image',
-    'id'            => 'home-banner'
+    'id'            => 'home-banner',
+    'before_widget' => '',
+    'after_widget' => ''
   ));
 
   // Widgets
