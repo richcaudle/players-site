@@ -21,6 +21,16 @@ function roots_widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
   ));
+  
+  register_sidebar(array(
+    'name'          => __('Next production', 'roots'),
+    'id'            => 'next-production'
+  ));
+  
+  register_sidebar(array(
+    'name'          => 'Home banner image',
+    'id'            => 'home-banner'
+  ));
 
   // Widgets
   register_widget('Roots_Vcard_Widget');
