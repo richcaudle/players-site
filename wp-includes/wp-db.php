@@ -1454,6 +1454,26 @@ class wpdb {
 				@mysqli_real_connect( $this->dbh, $host, $this->dbuser, $this->dbpassword, null, $port, $socket, $client_flags );
 			}
 
+			// call set_ssl if mysql client flag set and settings available
+			if ( $client_flags & MYSQL_CLIENT_SSL ) {
+			    $pack = array( $this->dbh );
+			    $call_set = false;
+			    foreach( array( 'MYSQL_SSL_KEY', 'MYSQL_SSL_CERT', 'MYSQL_SSL_CA',
+			        'MYSQL_SSL_CAPATH', 'MYSQL_SSL_CIPHER' ) as $opt_key ) {
+			        $pack[] = ( defined( $opt_key ) ) ? constant( $opt_key ) : null;
+			        $call_set |= defined( $opt_key );
+			    }
+			    /* Now if anything was packed - unpack into the function.
+			    * Note this doesn't check if paths exist, as per the PHP doc
+			    * at http://www.php.net/manual/en/mysqli.ssl-set.php: "This
+			    * function always returns TRUE value. If SSL setup is incorrect
+			    * mysqli_real_connect() will return an error ..."
+			    */
+			    if ( $call_set ) { // SSL added here!
+			        call_user_func_array( 'mysqli_ssl_set', $pack );
+			    }
+			}
+
 			if ( $this->dbh->connect_errno ) {
 				$this->dbh = null;
 
